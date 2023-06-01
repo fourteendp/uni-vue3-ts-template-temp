@@ -14,7 +14,7 @@
 - [ ] 微信登录
 - [ ] 分包
 - [ ] ESlint
-- [ ] Pretter
+- [x] Pretter
 - [ ] Stylelint
 - [ ] 将页面配置分开
 - [ ] 国际化
