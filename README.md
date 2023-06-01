@@ -1,6 +1,29 @@
 # uni-vue3-ts-template
 
-uni-app+vue3+typescript 模板
+- [ ] plop 支持
+- [ ] uni 命令选择支持
+- [ ] 环境变量支持
+- [ ] 提交 emoji
+- [ ] 生成日志
+- [ ] 单元测试
+- [ ] 路由封装
+- [ ] 请求封装
+- [ ] 虚拟滚动&&懒加载
+- [ ] 应用更新钩子
+- [ ] 顶部和底部兼容
+- [ ] 微信登录
+- [ ] 分包
+- [ ] ESlint
+- [ ] Pretter
+- [ ] Stylelint
+- [ ] 将页面配置分开
+- [ ] 国际化
+- [ ] 主题切换
+- [ ] turbo
+- [ ] 文件不编译直接输出
+- [ ] 状态持久化
+- [ ] mqtt&&websocket
+- [ ] 蓝牙
 
 ## uniapp vue3 项目构建
 
