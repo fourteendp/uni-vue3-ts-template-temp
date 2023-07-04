@@ -31,21 +31,26 @@ module.exports = {
       2,
       "always",
       [
-        "feat",
-        "fix",
-        "perf",
-        "style",
-        "docs",
-        "test",
-        "refactor",
-        "build",
-        "ci",
-        "chore",
-        "revert",
-        "wip",
-        "workflow",
-        "types",
-        "release",
+        "feat", // 新功能（feature）
+        "fix", // 修补bug
+        "docs", // 文档（documentation）
+        "style", // 格式（不影响代码运行的变动）
+        "refactor", // 重构（即不是新增功能，也不是修改bug的代码变动）
+        "test", // 增加测试
+        "chore", // 构建过程或辅助工具的变动
+        "revert", // 回滚
+        "build", // 打包
+        "ci", // CI
+        "perf", // 性能优化
+        "wip", // WIP
+        "types", // 类型定义文件更改
+        "release", // 发布
+        "workflow", // 工作流
+        "deps", // 依赖更新
+        "mock", // mock
+        "config", // 配置文件
+        "merge", // 合并分支
+        "init", // 初始化
       ],
     ],
   },
@@ -80,20 +85,26 @@ module.exports = {
       confirmCommit: "是否提交或修改commit ?",
     },
     types: [
-      { value: "feat", name: "feat:     新增功能" },
-      { value: "fix", name: "fix:      修复缺陷" },
-      { value: "docs", name: "docs:     文档变更" },
-      { value: "style", name: "style:    代码格式" },
-      { value: "refactor", name: "refactor: 代码重构" },
-      { value: "perf", name: "perf:     性能优化" },
-      { value: "test", name: "test:     添加疏漏测试或已有测试改动" },
-      { value: "build", name: "build:    构建流程、外部依赖变更 (如升级 npm 包、修改打包配置等)" },
-      { value: "ci", name: "ci:       修改 CI 配置、脚本" },
-      { value: "revert", name: "revert:   回滚 commit" },
-      { value: "chore", name: "chore:    对构建过程或辅助工具和库的更改 (不影响源文件、测试用例)" },
-      { value: "wip", name: "wip:      正在开发中" },
-      { value: "workflow", name: "workflow: 工作流程改进" },
-      { value: "types", name: "types:    类型定义文件修改" },
+      { value: "feat", name: "feat:      新功能" },
+      { value: "fix", name: "fix:       修复bug" },
+      { value: "docs", name: "docs:      文档" },
+      { value: "style", name: "style:     格式" },
+      { value: "refactor", name: "refactor: 重构" },
+      { value: "test", name: "test:      增加测试" },
+      { value: "chore", name: "chore:     构建过程或辅助工具的变动" },
+      { value: "revert", name: "revert:    回滚" },
+      { value: "build", name: "build:     打包" },
+      { value: "ci", name: "ci:        CI" },
+      { value: "perf", name: "perf:      性能优化" },
+      { value: "wip", name: "wip:       WIP" },
+      { value: "types", name: "types:     类型定义文件更改" },
+      { value: "release", name: "release:   发布" },
+      { value: "workflow", name: "workflow:  工作流" },
+      { value: "deps", name: "deps:      依赖更新" },
+      { value: "mock", name: "mock:      mock" },
+      { value: "config", name: "config:    配置文件" },
+      { value: "merge", name: "merge:     合并分支" },
+      { value: "init", name: "init:      初始化" },
     ],
     emptyScopesAlias: "empty:      不填写",
     customScopesAlias: "custom:     自定义",
