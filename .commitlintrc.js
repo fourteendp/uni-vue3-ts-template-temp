@@ -19,7 +19,7 @@ const scopeComplete = execSync("git status --porcelain || true")
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
   ignores: [(commit) => commit.includes("init")],
-  extends: ["@commitlint/config-conventional"],
+  extends: ["git-commit-emoji", "cz"],
   rules: {
     "body-leading-blank": [2, "always"],
     "footer-leading-blank": [1, "always"],
@@ -31,26 +31,18 @@ module.exports = {
       2,
       "always",
       [
-        "feat", // 新功能（feature）
-        "fix", // 修补bug
-        "docs", // 文档（documentation）
-        "style", // 格式（不影响代码运行的变动）
-        "refactor", // 重构（即不是新增功能，也不是修改bug的代码变动）
-        "test", // 增加测试
-        "chore", // 构建过程或辅助工具的变动
-        "revert", // 回滚
-        "build", // 打包
-        "ci", // CI
-        "perf", // 性能优化
-        "wip", // WIP
-        "types", // 类型定义文件更改
-        "release", // 发布
-        "workflow", // 工作流
-        "deps", // 依赖更新
-        "mock", // mock
-        "config", // 配置文件
-        "merge", // 合并分支
-        "init", // 初始化
+        "🎉 init",
+        "✨ feat",
+        "🐞 fix",
+        "📃 docs",
+        "🌈 style",
+        "🦄 refactor",
+        "🎈 perf",
+        "🧪 test",
+        "🔧 build",
+        "🐎 ci",
+        "🐳 chore",
+        "↩ revert",
       ],
     ],
   },
@@ -85,26 +77,18 @@ module.exports = {
       confirmCommit: "是否提交或修改commit ?",
     },
     types: [
-      { value: "feat", name: "feat:      新功能" },
-      { value: "fix", name: "fix:       修复bug" },
-      { value: "docs", name: "docs:      文档" },
-      { value: "style", name: "style:     格式" },
-      { value: "refactor", name: "refactor: 重构" },
-      { value: "test", name: "test:      增加测试" },
-      { value: "chore", name: "chore:     构建过程或辅助工具的变动" },
-      { value: "revert", name: "revert:    回滚" },
-      { value: "build", name: "build:     打包" },
-      { value: "ci", name: "ci:        CI" },
-      { value: "perf", name: "perf:      性能优化" },
-      { value: "wip", name: "wip:       WIP" },
-      { value: "types", name: "types:     类型定义文件更改" },
-      { value: "release", name: "release:   发布" },
-      { value: "workflow", name: "workflow:  工作流" },
-      { value: "deps", name: "deps:      依赖更新" },
-      { value: "mock", name: "mock:      mock" },
-      { value: "config", name: "config:    配置文件" },
-      { value: "merge", name: "merge:     合并分支" },
-      { value: "init", name: "init:      初始化" },
+      { emoji: "🎉", value: "init", name: "init:      初始化" },
+      { emoji: "✨", value: "feat", name: "feat:      新功能" },
+      { emoji: "🐞", value: "fix", name: "fix:       修复bug" },
+      { emoji: "📃", value: "docs", name: "docs:      文档" },
+      { emoji: "🌈", value: "style", name: "style:     代码格式" },
+      { emoji: "🦄", value: "refactor", name: "refactor:  代码重构" },
+      { emoji: "🎈", value: "perf", name: "perf:      性能优化" },
+      { emoji: "🧪", value: "test", name: "test:      测试" },
+      { emoji: "🔧", value: "build", name: "build:     打包构建" },
+      { emoji: "🐎", value: "ci", name: "ci:        CI" },
+      { emoji: "🐳", value: "chore", name: "chore:     其他修改" },
+      { emoji: "↩", value: "revert", name: "revert:    回滚" },
     ],
     emptyScopesAlias: "empty:      不填写",
     customScopesAlias: "custom:     自定义",
