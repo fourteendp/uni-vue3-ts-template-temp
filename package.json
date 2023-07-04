@@ -97,7 +97,6 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
-    "@commitlint/config-conventional": "^17.6.3",
     "@dcloudio/types": "^3.3.3",
     "@dcloudio/uni-automator": "3.0.0-3080320230526001",
     "@dcloudio/uni-cli-shared": "3.0.0-3080320230526001",
@@ -108,6 +107,8 @@
     "@workspace/prettier-config": "workspace:*",
     "@workspace/stylelint-config": "workspace:*",
     "@workspace/ts-config": "workspace:*",
+    "commitlint-config-cz": "^0.13.3",
+    "commitlint-config-git-commit-emoji": "^1.0.0",
     "cz-git": "^1.6.1",
     "czg": "^1.6.1",
     "husky": "^8.0.3",
